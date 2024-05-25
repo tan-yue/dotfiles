@@ -1,0 +1,16 @@
+[user]
+	name = Yue Tan
+	email = yuetan@cs.princeton.edu
+[core]
+	editor = vim
+[color]
+	ui = auto
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[log]
+	date = local
+	decorate = short
+[merge]
+	conflictStyle = diff3

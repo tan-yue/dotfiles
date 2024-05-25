@@ -1,0 +1,19 @@
+xterm*faceSize: 10
+xterm*faceName: xft:Hack Nerd Font Mono, \
+                xft:Ubuntu Mono:size=12, \
+                xft:DejaVu Mono:size=12
+xterm*background: Black
+xterm*foreground: grey
+
+xterm*disallowedWindowOps: 20,21,SetXprop
+xterm*selectToClipboard: true
+xterm*VT100.translations: #override \
+  Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\
+  Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\
+  Shift <Btn1Down>: select-start() \n\
+  Shift <Btn1Motion>: select-extend() \n\
+  Shift <Btn1Up>: select-end(CLIPBOARD) \n
+
+xterm*VT100*translations: #override \
+  Ctrl<Key>BackSpace: string("\033[7;5~")
+
